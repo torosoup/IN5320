@@ -9,30 +9,47 @@ body {
     max-width: 1000px;
     margin: 0 auto;
     color: rgb(41, 76, 76);
+    background-color: cadetblue;
 }
 
-header {
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 768px), screen and (min-height: 768px) {
+  main, header {
+    grid-template-columns: 1fr;
+  }
+}
+
+header, footer {
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    align-items: stretch;
     background-color: rgb(98, 190, 190);
     color: azure;
 }
 
-main {
-    display: flex;
-    flex-direction: row;
+header {
+    align-items: stretch;
+    justify-content: start;
+}
+
+footer {
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: rgb(41, 76, 76);
 }
 
 .left {
-    width: 40%;
     padding: 10px;
     background-color: rgb(164, 232, 232);
 }
 
 .right {
-    width: 60%;
     padding: 10px;
     background-color: azure;
 }
