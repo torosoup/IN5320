@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment 1</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>IN5320 Assignment 1 - Part 2 (JS)</h1>
+        </header>
+        <main>
+            <div class="container">
+                <h2>Step 1-4: Search</h2>
+                <form>
+                    <input type="text" id="currency" name="add" placeholder="Currency">
+                    <button type="button" onclick="addToList()">Add</button>
+                    <input type="text" id="ssearch" name="search" placeholder="Search" oninput="iterateSearch(arr_search, this.value);">
+                </form>
+                <ul id="search">
+                </ul>
+            </div>
+            <div class="container">
+                <h2>Step 5-6: Population lookup</h2>
+                <form>
+                    <input type="text" id="country" name="add" placeholder="Country">
+                    <button type="button" onclick="addToListPopulation();">Add</button>
+                    <input type="text" id="csearch" name="search" placeholder="Search" oninput="iterateSearchPopulation(arr_population, this.value);">
+                </form>
+                <ul id="population">
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <p>IN5320 Assignment 1 - Autumn 2026</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

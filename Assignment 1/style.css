@@ -21,6 +21,11 @@ main {
   main, header {
     grid-template-columns: 1fr;
   }
+  .container {
+    grid-template-columns: 1fr;
+    background-color: rgb(164, 232, 232);
+    padding: 10px;
+}
 }
 
 header, footer {
@@ -44,6 +49,19 @@ a {
     color: rgb(41, 76, 76);
 }
 
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+input {
+    margin-top: 4px;
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
 .left {
     padding: 10px;
     background-color: rgb(164, 232, 232);
@@ -61,7 +79,7 @@ a {
 
 .skill-name {
     display: inline-block;
-    width: 130px;
+    width: 150px;
 }
 
 .skill-bar {
@@ -87,4 +105,17 @@ a {
 
 .details {
     margin-left: 20px;
+}
+
+.container {
+    padding: 10px;
+    background-color: rgb(164, 232, 232);
+}
+
+.delBtn {
+    margin-left: 10px;
+}
+
+#ssearch, #csearch {
+    width: 273px;
 }
